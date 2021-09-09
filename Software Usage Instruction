@@ -3,7 +3,7 @@
 2. Open the software and first obtain the specific permissions required by the system bydynamically applying for permissions. Restart the app after completion, and all videos inthe local system will be displayed on the home page. Users can view all videos by swipingup and down. You can drag the text box up and down to see the parts of the text thatare not displayed.
 3. Click the three-point button on the right to bring up the bottom dialog box. Thebottom dialog box contains 3 operations that the user can choose: 
   1. Play the video 
-  2.Insert or update the database 
+  2. Insert or update the database 
   3. Delete the video. 
 4. In the video player, touch the screento activate the controller, touch again to hide the controller. Different functions can beachieved by clicking different buttons: you can drag the video progress bar, fast forward,rewind, pause, play, screen orientation, and change the playback speed.
 5. You can choose to insert or update video information on the database page. The firsttime to insert and click to save, but the second time to modify the same video, click toupdate.
