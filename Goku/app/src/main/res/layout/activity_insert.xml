@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".InsertActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tag_title"
+        android:gravity="center"
+        android:text="Insert to Database"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:onClick="backBtn"
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_goback"
+        app:tint="@color/mainbutton" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tv_title_insert"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="80dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tv_date_insert"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark"/>
+        <TextView
+            android:id="@+id/tv_path_insert"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark"/>
+        <EditText
+            android:id="@+id/et_comment_insert"
+            android:layout_width="match_parent"
+            android:hint="Comment here: ~"
+            android:textSize="15dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/white"
+            android:layout_height="250dp"/>
+
+        <RatingBar
+            android:id="@+id/rb_evaluate_insert"
+            android:progressTint="@color/mainbutton"
+            android:layout_gravity="center"
+            android:stepSize="1"
+            android:numStars="3"
+            android:layout_width="145dp"
+            android:progressBackgroundTint="@color/gray"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_save_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/vt_background"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_update_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/vt_background"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".FunctionActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tag_title"
+        android:gravity="center"
+        android:text="Function introduction"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:onClick="backBtn"
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_goback"
+        app:tint="@color/mainbutton" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:textSize="15dp"
+        android:text="
+1. Open the software and first obtain the specific permissions required by the system by dynamically applying for permissions. Restart the app after completion, and all videos in the local system will be displayed on the home page. Users can view all videos by swiping up and down. You can drag the text box up and down to see the parts of the text that are not displayed.\n
+2. Click the three-point button on the right to bring up the bottom dialog box. The bottom dialog box contains 3 operations that the user can choose: 1. Play the video 2. Insert or update the database 3. Delete the video.\n
+3. In the video player, touch the screen to activate the controller, touch again to hide the controller. Different functions can be achieved by clicking different buttons: you can drag the video progress bar, fast forward, rewind, pause, play, screen orientation, and change the playback speed.\n
+4. You can choose to insert or update video information on the database page. The first time to insert and click to save, but the second time to modify the same video, click to update.
+5. The delete video function will trigger a dialog box, and the user can follow the dialog box to perform operations.\n
+6. In the bottom navigation bar, user can navigate to different function pages by clicking the corresponding icons.\n
+7. Video recording function: Users can switch the recording video speed by clicking the buttons of different speed modes.\n
+8. Search function: The user can query the video by typing in the title of the video, and an auto-completion prompt box will pop up when entering the first letter. Users can also use 3 different buttons to find collections of videos with different ratings.\n"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

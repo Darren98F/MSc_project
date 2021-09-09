@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.darren.goku.widget.CameraView
+        android:id="@+id/cameraView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#802E2D2D"/>
+
+    <RadioGroup
+        android:id="@+id/rg_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_above="@+id/btn_record"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/record_speed_background"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_extra_slow"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/record_speed_button_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="SLOW+"
+            android:textSize="10dp"
+            android:textColor="@drawable/record_speed_button_text" />
+
+        <RadioButton
+            android:id="@+id/btn_slow"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/record_speed_button_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="SLOW"
+            android:textSize="10dp"
+            android:textColor="@drawable/record_speed_button_text" />
+
+        <RadioButton
+            android:id="@+id/btn_normal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/record_speed_button_background"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="NORMAL"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="@drawable/record_speed_button_text" />
+
+        <RadioButton
+            android:id="@+id/btn_fast"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/record_speed_button_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="FAST"
+            android:textSize="10dp"
+            android:textColor="@drawable/record_speed_button_text" />
+
+        <RadioButton
+            android:id="@+id/btn_extra_fast"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/record_speed_button_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="FAST+"
+            android:textSize="10dp"
+            android:textColor="@drawable/record_speed_button_text" />
+    </RadioGroup>
+
+    <com.darren.goku.widget.RecordButton
+        android:id="@+id/btn_record"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/record_button"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:text="RECORD"/>
+
+    <Chronometer
+        android:id="@+id/recordTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rg_speed"
+        android:layout_alignEnd="@+id/rg_speed"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="78dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+         />
+
+    <Button
+        android:id="@+id/point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/recordTime"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/record_button_background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_goback"
+        app:tint="@color/mainbutton" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/record_speed_button_background"
+        />
+
+
+
+</RelativeLayout>
