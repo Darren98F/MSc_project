@@ -74,7 +74,7 @@ public class AbstractFilter {
         textureBuffer.position(0);
         //normalized
         GLES20.glVertexAttribPointer(vCoord, 2, GLES20.GL_FLOAT, false, 0, textureBuffer);
-        //CPU传数据到GPU，默认情况下着色器无法读取到这个数据。 需要我们启用一下才可以读取
+ 
         GLES20.glEnableVertexAttribArray(vCoord);
 
 
